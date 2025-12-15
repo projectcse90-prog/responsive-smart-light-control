@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Home Energy & Light Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="energy.html">Energy</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="#" id="logout-link">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard Overview</h1>
+            <div id="current-time"></div>
+        </header>
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Rooms</h3>
+                <span id="total-rooms">4</span>
+            </div>
+            <div class="card">
+                <h3>Lights ON</h3>
+                <span id="lights-on">0</span>
+            </div>
+            <div class="card">
+                <h3>Power Consumption</h3>
+                <span id="power-consumption">0 W</span>
+            </div>
+        </div>
+        <div class="system-status">
+            <h3>System Status</h3>
+            <p id="system-message">All systems operational.</p>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

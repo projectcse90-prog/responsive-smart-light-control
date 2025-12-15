@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy - Smart Home Energy & Light Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="energy.html" class="active">Energy</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="#" id="logout-link">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Energy Monitoring</h1>
+        </header>
+        <div class="energy-summary">
+            <div class="card">
+                <h3>Total Daily Usage</h3>
+                <span id="daily-usage">0 kWh</span>
+            </div>
+            <div class="card">
+                <h3>Current Consumption</h3>
+                <span id="current-consumption">0 W</span>
+            </div>
+        </div>
+        <div class="room-usage">
+            <h3>Room-wise Usage</h3>
+            <ul id="room-usage-list">
+                <!-- Populated by JS -->
+            </ul>
+        </div>
+        <div class="energy-warning" id="energy-warning" style="display: none;">
+            <p>⚠️ High energy usage detected! Consider turning off some lights.</p>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms - Smart Home Energy & Light Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="rooms.html" class="active">Rooms</a></li>
+            <li><a href="energy.html">Energy</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="#" id="logout-link">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Room Controls</h1>
+            <button id="master-switch" class="master-btn">Turn All ON</button>
+        </header>
+        <div class="rooms-container">
+            <div class="room-card" data-room="living-room">
+                <div class="bulb" id="bulb-living-room"></div>
+                <h3>Living Room</h3>
+                <button class="toggle-btn" id="toggle-living-room">Turn ON</button>
+                <div class="brightness-control">
+                    <label for="brightness-living-room">Brightness:</label>
+                    <input type="range" id="brightness-living-room" min="0" max="100" value="50">
+                    <span id="brightness-value-living-room">50%</span>
+                </div>
+            </div>
+            <div class="room-card" data-room="bedroom">
+                <div class="bulb" id="bulb-bedroom"></div>
+                <h3>Bedroom</h3>
+                <button class="toggle-btn" id="toggle-bedroom">Turn ON</button>
+                <div class="brightness-control">
+                    <label for="brightness-bedroom">Brightness:</label>
+                    <input type="range" id="brightness-bedroom" min="0" max="100" value="50">
+                    <span id="brightness-value-bedroom">50%</span>
+                </div>
+            </div>
+            <div class="room-card" data-room="kitchen">
+                <div class="bulb" id="bulb-kitchen"></div>
+                <h3>Kitchen</h3>
+                <button class="toggle-btn" id="toggle-kitchen">Turn ON</button>
+                <div class="brightness-control">
+                    <label for="brightness-kitchen">Brightness:</label>
+                    <input type="range" id="brightness-kitchen" min="0" max="100" value="50">
+                    <span id="brightness-value-kitchen">50%</span>
+                </div>
+            </div>
+            <div class="room-card" data-room="study">
+                <div class="bulb" id="bulb-study"></div>
+                <h3>Study Room</h3>
+                <button class="toggle-btn" id="toggle-study">Turn ON</button>
+                <div class="brightness-control">
+                    <label for="brightness-study">Brightness:</label>
+                    <input type="range" id="brightness-study" min="0" max="100" value="50">
+                    <span id="brightness-value-study">50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
